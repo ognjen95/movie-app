@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+}
+.movieList {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: flex-start;
+  overflow: hidden;
+  align-items: center;
+  /* transform: translateX(500%); */
+  width: 100%;
+}
+
+.movieItemAll {
+  margin: 0;
+  transition: 0.9s linear;
+}
+.infoDiv {
+  position: absolute;
+}
+
+.movieImg {
+  width: 250px;
+  height: 300px;
+  transition: 0.3s ease;
+  position: relative;
+}
+.movieImg:hover {
+  transition: 0.5s ease;
+  transition-delay: 0.5s;
+
+  z-index: 1999;
+  cursor: pointer;
+  margin: 0 25px;
+  width: 300px;
+  height: 350px;
+}
+.genreText {
+  text-align: left;
+  margin-left: 10px;
+}
+.prevBtn {
+  position: absolute;
+  left: 0;
+  top: 100px;
+  padding: 10px;
+  z-index: 1000;
+  transform: rotate(180deg);
+}
+.nextBtn {
+  position: absolute;
+  right: 0;
+  top: 100px;
+  padding: 10px;
+  z-index: 1000;
+}
+.movieListDiv {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nextPrev {
+  opacity: 0.2;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  height: 100px;
+  width: 50px;
+  z-index: 99999;
+}
+.nextPrev:hover {
+  opacity: 0.7;
+
+  transition: 0.5s ease-in-out;
+}
+.slider {
+  /* border: 1px solid red; */
+  width: 100%;
+  max-height: 70vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide {
+  /* border: 1px solid blue; */
+  min-width: 100%;
+  height: 100%;
+  transition: 1s ease-in-out;
+}
+.goLeft {
+  top: 50%;
+  position: absolute;
+  left: 2%;
+  transform: translateY(-50%);
+  opacity: 0.3;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  color: gray;
+}
+.goRight {
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translateY(-50%);
+  opacity: 0.1;
+
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  color: gray;
+}
+.goLeft:hover,
+.goRight:hover {
+  opacity: 0.6;
+  transition: 0.5s;
+}
+.imgComp {
+  width: 100%;
+  height: 100%;
+}
+.imgCompDiv {
+  position: relative;
+  height: 100%;
+  z-index: -1;
+}
+.imgTextInfo {
+  position: absolute;
+  bottom: 1%;
+  right: 5%;
+  font-size: 30px;
+  text-align: left;
+  display: block;
+  margin-bottom: 14%;
+  color: white;
+  z-index: 9999999;
+}
+.imgTextInfo button {
+  padding: 10px 30px;
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
+  margin-right: 120x;
+}
